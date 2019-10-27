@@ -1,0 +1,14 @@
+def plusMinus(arr):
+    pc=0
+    nc=0
+    zc=0
+    for i in range(len(arr)):
+        if arr[i]==0:
+            zc=zc+1
+        if arr[i]>0:
+            pc=pc+1
+        if arr[i]<0:
+            nc=nc+1
+    print(round(pc/len(arr),6))
+    print(round(nc/len(arr),6))
+    print(round(zc/len(arr),6))

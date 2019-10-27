@@ -1,0 +1,9 @@
+def compareTriplets(a, b):
+    m=0  #initialize two variables to  m and n to 0 to keep a count
+    n=0
+    for i in range(len(a)): #both array elements are compared 
+        if a[i]>b[i]:
+            m=m+1
+        elif a[i]<b[i]:
+            n=n+1
+    return m,n

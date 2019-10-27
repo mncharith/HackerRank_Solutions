@@ -1,0 +1,10 @@
+def diagonalDifference(arr):
+    ld=0
+    rd=0
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            if i==j: #for primary diagonal
+                ld=ld+arr[i][j]
+            if((i+j)==(len(arr)-1)):#for secondary diagonal
+                rd=rd+arr[i][j]
+    return (abs(ld-rd))

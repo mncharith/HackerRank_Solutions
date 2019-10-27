@@ -1,0 +1,5 @@
+def aVeryBigSum(ar):
+    s=0
+    for i in range(len(ar)):
+        s=s+ar[i]
+    return s

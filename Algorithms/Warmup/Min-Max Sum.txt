@@ -1,0 +1,10 @@
+def miniMaxSum(arr):
+    arr.sort()
+    max=0
+    min=0
+    for i in range(len(arr)-1):
+        min=min+arr[i]
+    arr.reverse()
+    for i in range(len(arr)-1):
+        max=max+arr[i]
+    print(min,max)
